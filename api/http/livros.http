@@ -1,0 +1,51 @@
+//Testes da API da Livraria - Livros
+@baseURL = http://localhost:4000/api/livros
+
+###
+// GET - Obtém todos os livros
+GET {{baseURL}}
+Content-Type:  application/json
+
+###
+// GET /id - Obtém o livro pelo ISBN
+GET {{baseURL}}/id/9780807286005
+Content-Type:  application/json
+
+###
+// POST - Insere um novo livro
+POST {{baseURL}}
+Content-Type: application/json
+
+{
+    "ISBN": "978080728600",
+    "titulo" : "A Biblia",
+    "tituloEs" : "La Biblia",
+    "paginas": 1803,
+    "lancamento": "2010-07-02",
+    "generos": ["religioso","fantasia","ação"],
+    "editora": "Aparecida",
+    "autores": ["São Mateus","São Lucas"],
+    "avaliacao": "★★★★"
+}
+
+###
+// DELETE - Remove o livro pelo ISBN
+DELETE {{baseURL}}/978080728600
+Content-Type: application/json
+
+###
+// PUT - Altera um livro existente
+PUT {{baseURL}}/978080728600
+Content-Type: application/json
+
+{
+    "ISBN": "978080728600",
+    "titulo" : "A Biblia alterada",
+    "tituloEs" : "La Biblia",
+    "paginas": 1803,
+    "lancamento": "2010-07-02",
+    "generos": ["religioso","fantasia","ação"],
+    "editora": "Aparecida",
+    "autores": ["São Mateus","São Lucas"],
+    "avaliacao": "★★★★★"
+}

@@ -1,0 +1,26 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "Backend Node",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node api/index.js",
+    "dev": "nodemon api/index.js"
+  },
+  "keywords": [
+    "nodejs",
+    "express"
+  ],
+  "author": "Ricardo Leme",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.19.2",
+    "express-validator": "^7.2.0",
+    "mongodb": "^6.8.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.5"
+  }
+}

@@ -1,0 +1,253 @@
+/* Reset básico para melhorar a consistência entre navegadores */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+}
+
+body {
+    background-color: #f0f4f8;
+    color: #2c3e50;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* Container principal */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Estilo da página de login */
+.login-container {
+    max-width: 400px;
+    margin: 100px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.login-container h2 {
+    font-size: 24px;
+    color: #1e3a8a;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.login-container input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 2px solid #e2e8f0;
+    border-radius: 6px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+}
+
+.login-container input:focus {
+    border-color: #3b82f6;
+    outline: none;
+}
+
+.login-container button {
+    width: 100%;
+    padding: 12px;
+    background-color: #3b82f6;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.login-container button:hover {
+    background-color: #2563eb;
+}
+
+.delete{
+    color: #ef4444;
+}
+
+.error-message {
+    color: #ef4444;
+    text-align: center;
+    margin-top: 10px;
+}
+
+/* Estilo do CRUD de livros */
+.crud-container {
+    max-width: 80%;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.crud-container h1 {
+    font-size: 28px;
+    color: #1e3a8a;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.crud-container input, .crud-container button {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 2px solid #e2e8f0;
+    border-radius: 6px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+}
+
+.crud-container input:focus {
+    border-color: #3b82f6;
+    outline: none;
+}
+
+.crud-container button {
+    background-color: #3b82f6;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.crud-container button:hover {
+    background-color: #2563eb;
+}
+
+/* Estilo da tabela de livros */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table th, table td {
+    padding: 12px;
+    border: 1px solid #e2e8f0;
+    text-align: center;
+    font-size: 14px;
+    color: #1e3a8a;
+}
+
+table th {
+    background-color: #f1f5f9;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+table tr:nth-child(even) {
+    background-color: #f9fafb;
+}
+
+table tr:hover {
+    background-color: #e0f2fe;
+    cursor: pointer;
+}
+
+button.edit, button.delete {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 5px;
+    transition: background-color 0.3s ease;
+}
+
+button.edit {
+    background-color: #3b82f6;
+    color: white;
+}
+
+button.edit:hover {
+    background-color: #2563eb;
+}
+
+button.delete {
+    background-color: #ef4444;
+    color: white;
+}
+
+button.delete:hover {
+    background-color: #dc2626;
+}
+/* Estilo para a imagem no formulário de login */
+.login-container .login-image {
+    display: block;
+    margin: 0 auto 20px auto; /* Centraliza a imagem e adiciona espaçamento */
+    max-width: 150px; /* Limita a largura máxima da imagem */
+    height: auto; /* Mantém a proporção da imagem */
+}
+
+/* Estilo de Avaliação por Estrelas */
+.rating {
+    display: inline-block;
+    position: relative;
+    height: 50px;
+    line-height: 50px;
+    font-size: 50px;
+  }
+  
+  .rating label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    cursor: pointer;
+  }
+  
+  .rating label:last-child {
+    position: static;
+  }
+  
+  .rating label:nth-child(1) {
+    z-index: 5;
+  }
+  
+  .rating label:nth-child(2) {
+    z-index: 4;
+  }
+  
+  .rating label:nth-child(3) {
+    z-index: 3;
+  }
+  
+  .rating label:nth-child(4) {
+    z-index: 2;
+  }
+  
+  .rating label:nth-child(5) {
+    z-index: 1;
+  }
+  
+  .rating label input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+  }
+  
+  .rating label .icon {
+    float: left;
+    color: transparent;
+  }
+  
+  .rating label:last-child .icon {
+    color: #000;
+  }
+  
+  .rating:not(:hover) label input:checked ~ .icon,
+  .rating:hover label:hover input ~ .icon {
+    color: #09f;
+  }
+  
+  .rating label input:focus:not(:checked) ~ .icon:last-child {
+    color: #000;
+    text-shadow: 0 0 5px #09f;
+  }
