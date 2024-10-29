@@ -9,7 +9,18 @@
 </head>
 
 <body>
-<h1>Cadastro de Livros</h1>
+<div class="crud-container">
+    <img src="images/undraw_books.svg" alt="Livros"
+    height="100" />
+    <h1>Gerenciamento de Livros</h1>
+    <!-- formulário de livros -->
+     <form id="livroForm">
+        <input type="text" id="isbn" maxlength="17" class="input-field " placeholder="ISBN Ex: 978-3-16-148410-0">
+        <input type="text" id="titulo" placeholder="Titulo em português" class="input-field">
+        <input type="text" id="tituloEs" placeholder="Título em espanhol" class="input-field">
+        <input type="number" id="paginas" placeholder="Número de Páginas" class="input-field">
+     </form>
+</div>
 
 </body>
 

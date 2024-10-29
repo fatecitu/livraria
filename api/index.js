@@ -2,7 +2,7 @@ import express from 'express'
 import rotasLivros from './routes/livros.js'
 
 const app = express()
-const PORT = 4000
+const PORT = 4001
 app.use(express.json())
 //removendo o x-powered-by por segurança
 app.disable('x-powered-by')
