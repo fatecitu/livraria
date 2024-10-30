@@ -19,9 +19,28 @@
         <input type="text" id="titulo" placeholder="Titulo em português" class="input-field">
         <input type="text" id="tituloEs" placeholder="Título em espanhol" class="input-field">
         <input type="number" id="paginas" placeholder="Número de Páginas" class="input-field">
+        <input type="date" id="lancamento" class="input-field">
+        <input type="text" id="generos" placeholder="Gêneros (separe por vírgula)" class="input-field">
+        <input type="text" id="editora" placeholder="Editora" class="input-field">
+        <input type="text" id="autores" placeholder="Autores (separe por vírgula)" class="input-field">
+        <!-- botão -->
+         <button type="submit" id="btnSalvar">💾 Salvar Livro</button>
      </form>
+     <!-- Tabela dos livros -->
+      <table id="livrosTable">
+        <thead>
+            <tr>
+                <th>ISBN</th>
+                <th>Título</th>
+                <th>Páginas</th>
+                <th>Gêneros</th>
+                <th>Opções</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
 </div>
-
+<script src="js/livros.js"></script>
 </body>
 
 </html>
