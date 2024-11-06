@@ -23,6 +23,40 @@
         <input type="text" id="generos" placeholder="Gêneros (separe por vírgula)" class="input-field">
         <input type="text" id="editora" placeholder="Editora" class="input-field">
         <input type="text" id="autores" placeholder="Autores (separe por vírgula)" class="input-field">
+        <!-- avaliação com estrelas -->
+         <label for="rating">Avaliação</label>
+         <div class="rating">
+            <label>
+                <input type="radio" name="avaliacao" value="★">
+                <span class="icon">★</span>
+            </label>
+            <label>
+                <input type="radio" name="avaliacao" value="★★">
+                <span class="icon">★</span>
+                <span class="icon">★</span>
+            </label>
+            <label>
+                <input type="radio" name="avaliacao" value="★★★">
+                <span class="icon">★</span>
+                <span class="icon">★</span>
+                <span class="icon">★</span>
+            </label>
+            <label>
+                <input type="radio" name="avaliacao" value="★★★★">
+                <span class="icon">★</span>
+                <span class="icon">★</span>
+                <span class="icon">★</span>
+                <span class="icon">★</span>
+            </label>
+            <label>
+                <input type="radio" name="avaliacao" value="★★★★">
+                <span class="icon">★</span>
+                <span class="icon">★</span>
+                <span class="icon">★</span>
+                <span class="icon">★</span>
+                <span class="icon">★</span>
+            </label>
+         </div>
         <!-- botão -->
          <button type="submit" id="btnSalvar">💾 Salvar Livro</button>
      </form>
@@ -34,6 +68,7 @@
                 <th>Título</th>
                 <th>Páginas</th>
                 <th>Gêneros</th>
+                <th>Avaliação</th>
                 <th>Opções</th>
             </tr>
         </thead>

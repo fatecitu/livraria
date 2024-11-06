@@ -17,8 +17,8 @@ POST {{baseURL}}
 Content-Type: application/json
 
 {
-    "ISBN": "978080728600",
-    "titulo" : "A Biblia",
+    "ISBN": "978080728601",
+    "titulo" : "",
     "tituloEs" : "La Biblia",
     "paginas": 1803,
     "lancamento": "2010-07-02",
